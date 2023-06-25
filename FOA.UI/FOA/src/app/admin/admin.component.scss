@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: max-content auto;
+    row-gap: 32px;
+
+    .tabs {
+        display:grid;
+        align-items: center;
+
+        .content {
+            margin-top: 16px;
+        }
+    }
+
+    .title {
+        color:aliceblue;
+    }
+}

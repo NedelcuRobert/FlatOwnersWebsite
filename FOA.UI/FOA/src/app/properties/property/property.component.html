@@ -1,0 +1,37 @@
+<mat-card *ngIf="!!apartment">
+    <mat-card-header>
+      <mat-card-title>
+        Apartment  {{apartment.apartmentNumber}}
+      </mat-card-title>
+      <mat-card-subtitle class="content">
+        <div class="info">
+          <div>Phone: {{apartment.phoneNumber}}</div>
+          <div>Surface: {{apartment.surface}}</div>
+          <div>Persons: {{apartment.numberOfPersons}}</div>
+        </div>
+        <div class="address">
+          <div>City: {{apartment.city}}</div>
+          <div>Street: {{apartment.street}}</div>
+          <div>Building: {{apartment.building}}</div>
+        </div>
+        <div class="water-cold" *ngIf="!!lastConsumption">
+          <div>Kitchen Hot: {{lastConsumption.hotKitchen}}</div>
+          <div>Bathroom Hot: {{lastConsumption.hotBathroom}}</div>
+          <div>Date: {{lastConsumption.creationDate}}</div>
+        </div>
+        <div class="water-hot" *ngIf="!!lastConsumption">
+          <div>Kitchen Cold: {{lastConsumption.coldKitchen}}</div>
+          <div>Bathroom Cold: {{lastConsumption.coldBathroom}}</div>
+        </div>
+        <div class="invoice-status" *ngIf="!!lastReport">
+          <div>Pay amount: {{lastReport.amount}}</div>
+          <div>Due date: {{lastReport.dueDate}}</div>
+        </div>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions class="actions" align="end">
+      <button mat-stroked-button (click)="onEdit()">EDIT</button>
+      <!-- <button mat-stroked-button (click)="onView()">VIEW INVOICES</button> -->
+      <button mat-stroked-button (click)="onAddWC()">ADD WATER CONSUMPTION</button>
+    </mat-card-actions>
+  </mat-card>

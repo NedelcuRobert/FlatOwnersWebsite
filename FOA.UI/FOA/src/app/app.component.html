@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <ng-container *ngIf="isUserAuthenticated; else Visitor">
+    <div class="content">
+
+      <app-menu class="menu"></app-menu>
+
+      <div class="page">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  </ng-container>
+</div>
+
+
+<ng-template #Visitor>
+  <app-login></app-login>
+</ng-template>

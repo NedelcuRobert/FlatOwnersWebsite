@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FOA.BACKEND.props" />
+</Project>

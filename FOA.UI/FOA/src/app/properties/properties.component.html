@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="title">My Properties</div>
+    <div class="action-buttons">
+        <button mat-raised-button (click)="openAddDialog()">Add</button>
+    </div>
+
+    <div class="content">
+        <ng-container *ngIf="!!apartments">
+            <ng-container *ngFor="let apartment of apartments">
+                <app-property [apartment]="apartment"></app-property>
+            </ng-container>
+        </ng-container>
+
+        <app-property></app-property>
+        <app-property></app-property>
+    </div>
+</div>

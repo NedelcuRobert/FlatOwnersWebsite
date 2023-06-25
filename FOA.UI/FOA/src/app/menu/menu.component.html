@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="content">
+        <div class="profile">
+            <div class="profile-picture" [ngStyle]="{'background-image': 'url(' + profileUrl + ')'}" ></div>
+            <div class="username">{{user.email}}</div>
+        </div>
+
+        <div class="links">
+            <!-- <div class="link"><button mat-button routerLink="/news">News</button></div> -->
+            <div class="link"><button mat-button routerLink="/properties">Properties</button></div>
+            <!-- <div class="link"><button mat-button routerLink="/requests">Requests</button></div> -->
+            <div class="link"><button mat-button routerLink="/reports">Reports</button></div>
+            <div class="link"><button mat-button routerLink="/admin">Admin</button></div>
+        </div>
+
+        <div class="user-actions">
+            <div class="action"><button mat-button class="small" routerLink="/profile">Profile</button></div>
+            <div class="action"><button mat-button class="small" (click)="onSignOut()">Log Out</button></div>
+        </div>
+    </div>
+</div>

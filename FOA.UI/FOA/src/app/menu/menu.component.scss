@@ -1,0 +1,65 @@
+.wrapper {
+    height: 100%;
+    background-color: #36454F;
+    display:grid;
+    justify-content: center;
+
+    .content {
+        padding: 32px;
+        display: grid;
+        grid-template-rows: max-content max-content 1fr;
+        row-gap: 128px;
+
+        .profile {
+            display: grid;
+            grid-template-rows: 128px 32px;
+            height: max-content;
+            row-gap: 16px;
+
+            .profile-picture {
+                width: 128px;
+                height: 128px;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            .username {
+                display: grid;
+                justify-content: center;
+                color:antiquewhite;
+                font-size: 20px;
+            }
+        }
+
+        .links {
+            display: grid;
+            row-gap: 16px;
+
+            .link {
+                font-size: 20px;
+                color: rgb(219, 219, 219);
+            }
+        }
+
+        .user-actions {
+            justify-content: end;
+
+            .action {
+                font-size: 16px;
+                color: rgb(219, 219, 219);
+            }
+        }
+
+    }
+
+}
+
+button {
+    width: 120px;
+    font-size: 18px;
+}
+
+.small {
+    width: 90px !important;
+    font-size: 14px !important;
+}

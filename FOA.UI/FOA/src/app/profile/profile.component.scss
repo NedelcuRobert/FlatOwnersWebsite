@@ -1,0 +1,96 @@
+
+.profile-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content auto 1fr;
+    row-gap: 32px;
+
+    .title {
+        font-size: 24px;
+        color:aliceblue;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 20% auto;
+        column-gap: 128px;
+
+
+        .left-side {
+            grid-column: 1;
+            display: grid;
+            grid-template-rows: 270px auto;
+            justify-content: center;
+
+            .avatar {
+                background-color: white;
+                width: 256px;
+                height: 256px;
+                border-radius: 50%;
+            }
+
+            .avatar-actions {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+            }
+        }
+
+        .right-side {
+            grid-column: 2;
+            display: grid;
+            grid-template-columns: 400px 400px;
+            column-gap: 64px;
+
+            .informations {
+                form, .confirm-password {
+                    display: grid;
+                    align-items:center;
+                    row-gap: 12px;
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: large;
+                }
+            }
+
+            .address {
+
+                form {
+                    display: grid;
+                    row-gap: 12px;
+                    width: 100%;
+                    max-width: 400px;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+label {
+    font-weight:400;
+    color: white;
+}
+
+input {
+    font-size: xx-large;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    align-items: end;
+
+    .save {
+        margin-right: 16px;
+    }
+
+}
+
+button {
+    width: 150px;
+}
+

@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Add new employee</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="address">
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>First Name</mat-label>
+            <input matInput  [formControl]="firstName"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Last Name</mat-label>
+            <input matInput  [formControl]="lastName"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Phone Number</mat-label>
+            <input matInput  [formControl]="phoneNumber"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Salary</mat-label>
+            <input matInput  [formControl]="salary"  type="text" id="password" name="password" >
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" (click)="onAdd()" cdkFocusInitial>Add</button>
+</mat-dialog-actions>

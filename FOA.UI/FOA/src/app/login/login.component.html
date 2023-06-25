@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="tabs">
+      <mat-tab-group>
+          <mat-tab label="LOGIN">
+              <div class="content">
+                <div class="login-wrapper">
+                  <div class="login-container">
+                    <form class="address">
+                      <div class="red-text"> {{ message }} </div>
+                      <mat-form-field appearance="fill" class="form-group">
+                          <mat-label>Email</mat-label>
+                          <input matInput [formControl]="emailControl" type="email" id="email" name="email" >
+                      </mat-form-field>
+                      <mat-form-field appearance="fill" class="form-group">
+                          <mat-label>Password</mat-label>
+                          <input matInput [formControl]="passwordControl" type="password" id="password" name="password" >
+                      </mat-form-field>
+                      <button mat-flat-button color="primary" (click)="onSubmit()">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </mat-tab>
+          <mat-tab label="REGISTER">
+              <div class="content">
+                <app-register></app-register>
+              </div>
+          </mat-tab>
+      </mat-tab-group>
+
+
+  </div>
+
+</div>
+

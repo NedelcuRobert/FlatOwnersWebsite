@@ -1,0 +1,48 @@
+<div class="login-wrapper">
+    <div class="login-container">
+      <form class="address">
+        <div class="red-text"> {{ message }} </div>
+        <div class="wrap">
+          <div class="login">
+              <mat-form-field appearance="fill" class="form-group">
+                  <mat-label>Email</mat-label>
+                  <input matInput [formControl]="email" type="email" id="email" name="email" >
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="form-group">
+                  <mat-label>First name</mat-label>
+                  <input matInput [formControl]="firstName" type="text" id="First" name="First" >
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="form-group">
+                  <mat-label>Last name</mat-label>
+                  <input matInput [formControl]="lastName" type="text" id="Last" name="First" >
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="form-group">
+                <mat-label>Password</mat-label>
+                <input matInput [formControl]="password" type="password" id="password" name="password" >
+              </mat-form-field>
+          </div>
+          <div class="address">
+              <mat-form-field appearance="fill" class="form-group">
+                  <mat-label>City</mat-label>
+                  <input matInput [formControl]="city" type="text" id="City" name="First" >
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="form-group">
+                  <mat-label>Street</mat-label>
+                  <input matInput [formControl]="street" type="text" id="Street" name="First" >
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="form-group">
+                <mat-label>Building</mat-label>
+                <input matInput [formControl]="building" type="text" id="Building" name="First" >
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="form-group">
+                <mat-label>Number</mat-label>
+                <input matInput [formControl]="apartmentNumber" type="text" id="Number" name="First" >
+            </mat-form-field>
+
+          </div>
+        </div>
+
+        <button mat-flat-button color="primary" (click)="onSubmit()" [disabled]="isDisabled">Register</button>
+      </form>
+    </div>
+  </div>

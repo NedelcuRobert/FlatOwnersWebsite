@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>Edit property</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="address">
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Tenant Phone Number</mat-label>
+            <input matInput  [formControl]="phoneControl"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Number of people</mat-label>
+            <input matInput  [formControl]="numberOfPeopleControl"  type="text" id="password" name="password" >
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="onAdd()" [disabled]="isDisabled">Add</button>
+</mat-dialog-actions>

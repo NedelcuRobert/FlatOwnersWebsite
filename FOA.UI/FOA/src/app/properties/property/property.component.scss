@@ -1,0 +1,14 @@
+.actions {
+    column-gap: 16px;
+}
+
+mat-card-title {
+    color:aliceblue;
+    text-shadow: 2px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 64px;
+}

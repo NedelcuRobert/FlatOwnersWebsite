@@ -1,0 +1,10 @@
+mat-dialog-content {
+    min-width: 500px;
+    max-height: none;
+
+    .address {
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 16px;
+    }
+}

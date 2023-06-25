@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Add new contract</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="address">
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Provider Name</mat-label>
+            <input matInput  [formControl]="provider"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Service Name</mat-label>
+            <input matInput  [formControl]="service"  type="text" id="password" name="password" >
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-group">
+            <mat-label>Cost per Month</mat-label>
+            <input matInput  [formControl]="cost"  type="text" id="password" name="password" >
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" (click)="onAdd()" cdkFocusInitial>Add</button>
+</mat-dialog-actions>

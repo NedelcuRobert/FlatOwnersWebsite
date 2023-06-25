@@ -1,0 +1,15 @@
+mat-dialog-content {
+    min-width: 700px;
+    max-height: none;
+
+    .address {
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 16px;
+    }
+}
+
+
+textarea {
+    min-height: 300px;
+}

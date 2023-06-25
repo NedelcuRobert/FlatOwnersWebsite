@@ -1,0 +1,33 @@
+* {
+    overflow: hidden;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    .filter {
+        min-width: 500px;
+    }
+
+    .buttons {
+        display: grid;
+        justify-content: end;
+        align-items: start;
+
+        button {
+            max-width: 160px;
+        }
+    }
+
+}
+
+mat-icon-button {
+    max-height: 24px;
+}
+
+
+.mat-mdc-icon-button.mat-mdc-button-base{
+    height: 56px !important;
+    width: 56px !important;
+}
